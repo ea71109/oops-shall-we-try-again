@@ -2,7 +2,7 @@ package org.example;
 import java.util.Scanner;
 
 public class Oops {
-  public int ValidateInput(Scanner scanner, int min, int max, String prompt, String errorMessage)
+  public int validateInput(Scanner scanner, int min, int max, String prompt, String errorMessage)
   {
     int input = 0;
     boolean isValid = false;

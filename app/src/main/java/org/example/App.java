@@ -11,8 +11,16 @@ public class App {
     String errorMessage = "Your value is invalid";
 
     Oops validator = new Oops();
-    int userChoice = validator.ValidateInput(scanner, minBound, maxBound, prompt, errorMessage);
+    int userChoice = validator.validateInput(scanner, minBound, maxBound, prompt, errorMessage);
 
+    System.out.println("The value chosen by the user is " + userChoice);
+
+    int secondMinBound = 50;
+    int secondMaxBound = 500;
+    String secondPrompt = "Please enter your value: ";
+    String secondErrorMessage = "Your value is not valid";
+
+    userChoice = validator.validateInput(scanner, secondMinBound, secondMaxBound, secondPrompt, secondErrorMessage);
     System.out.println("The value chosen by the user is " + userChoice);
     scanner.close();
   }
